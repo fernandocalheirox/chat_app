@@ -1,1 +1,3 @@
-# chat_app
+# Chat App
+
+## Status: Em Desenvolviment
