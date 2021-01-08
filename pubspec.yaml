@@ -48,7 +48,7 @@ flutter:
   assets:
     - assets/backgrounds/bg-login.png
     - assets/backgrounds/bg-singup.png
-
+    - assets/user_icons/jaina.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
