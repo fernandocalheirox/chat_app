@@ -1,3 +1,5 @@
+import 'package:chat_app/pages/home_page.dart';
+import 'package:chat_app/pages/signup/signup_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -36,7 +38,13 @@ class _LoginPageState extends State<LoginPage> {
             children: [
               SizedBox(height: _height * .45),
               GestureDetector(
-                onTap: (){},
+                onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Signup()),
+                  );
+                  
+                },
                 child: Container(
                   alignment: Alignment.topRight,
                   padding: EdgeInsets.only(
@@ -149,7 +157,9 @@ class _LoginPageState extends State<LoginPage> {
                SizedBox(height: _height * .02),
 
                GestureDetector(
-                 onTap: (){},
+                 onTap: (){
+                   Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context) => HomePage()));
+                 },
                  child: Container(
                    margin: EdgeInsets.only(
                       left: 100,
